@@ -1,0 +1,20 @@
+// .vscode/settings.json
+{
+  // ⚠️ VS Code 1.102 で deprecated — コード/テスト生成のルールは
+  // Phase 4 のファイルベース instructions を使ってください：
+  //   "github.copilot.chat.codeGeneration.instructions": [],
+  //   "github.copilot.chat.testGeneration.instructions": [],
+
+  // 1. コミットメッセージ生成（Source Control の ✨ きらめきアイコン）
+  "github.copilot.chat.commitMessageGeneration.instructions": [],
+
+  // 2. PR 説明文生成（draft PR の "Generate description" ボタン）
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [],
+
+  // 3. レビュー対象セレクション（選択コードの Copilot Review）
+  "github.copilot.chat.reviewSelection.instructions": [
+    {
+      "text": "Use Conventional Commits format: type(scope): description.\nValid types (use these EXACT English tokens — do not translate to Japanese or any other language): feat, fix, docs, refactor, test, chore.\nValid scopes: syllabus, library, hr-cobol, build, docs.\nSubject line <=72 chars; lowercase; no period at end.\nFor refactor commits, mention which COBOL paragraph or copybook changed.\nExample correct: \"fix(syllabus): correct WS-LINE-COUNT reset condition\"\nExample incorrect (do NOT do this): \"修正(syllabus): ...\" / \"Fix(syllabus): ...\" / \"FIX(syllabus): ...\""
+    }
+  ]
+}

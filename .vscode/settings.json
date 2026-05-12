@@ -6,7 +6,11 @@
   //   "github.copilot.chat.testGeneration.instructions": [],
 
   // 1. コミットメッセージ生成（Source Control の ✨ きらめきアイコン）
-  "github.copilot.chat.commitMessageGeneration.instructions": [],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Use Conventional Commits format: type(scope): description.\nValid types (use these EXACT English tokens — do not translate to Japanese or any other language): feat, fix, docs, refactor, test, chore.\nValid scopes: syllabus, library, hr-cobol, build, docs.\nSubject line <=72 chars; lowercase; no period at end.\nFor refactor commits, mention which COBOL paragraph or copybook changed.\nExample correct: \"fix(syllabus): correct WS-LINE-COUNT reset condition\"\nExample incorrect (do NOT do this): \"修正(syllabus): ...\" / \"Fix(syllabus): ...\" / \"FIX(syllabus): ...\""
+    }
+  ],
 
   // 2. PR 説明文生成（draft PR の "Generate description" ボタン）
   "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [

@@ -9,7 +9,11 @@
   "github.copilot.chat.commitMessageGeneration.instructions": [],
 
   // 2. PR 説明文生成（draft PR の "Generate description" ボタン）
-  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    {
+      "text": "Generate the PR description with these sections, in this order:\n\n## What\n[1-2 sentences on the change]\n\n## Why\n[Reference the issue or motivation]\n\n## Affected COBOL modules\n[List which Syllabus / Library / HR-COBOL programs are touched]\n\n## How tested\n[Build verified? `make` succeeds? Manual run? Mock data?]\n\n## ADR\n[If architectural, link the docs/adr/ entry; otherwise write 'N/A']"
+    }
+  ],
 
   // 3. レビュー対象セレクション（選択コードの Copilot Review）
   "github.copilot.chat.reviewSelection.instructions": [
